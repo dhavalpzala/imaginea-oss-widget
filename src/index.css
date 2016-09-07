@@ -1,0 +1,53 @@
+.oss-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
+
+.oss-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0.6;
+}
+
+.oss-hide {
+    display: none;
+}
+
+.oss-content {
+    position: relative;
+    z-index: 1000;
+    width: 95%;
+    max-width: 700px;
+    margin: 0px auto;
+    background: white;
+    padding: 15px;
+    top: 10%;
+    border-radius: 8px;
+}
+
+.oss-close {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background: white;
+    padding: 10px 5px 5px 5px; 
+}
+
+.oss-close:before {
+    content: "X";
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+}
