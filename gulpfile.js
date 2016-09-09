@@ -1,24 +1,25 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var handlebars = require('gulp-handlebars');
+var gulpHandlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var handlebars = require('handlebars');
 var del = require('del');
 
 //paths
 var templatesSource = 'src/**/*.hbs',
   scriptsSource = 'src/**/*.js',
   cssSource = 'src/**/*.css',
-  handlebarsRuntimeSrc = 'lib/handlebars.runtime.js',  
+  handlebarsRuntimeSrc = './node_modules/handlebars/dist/handlebars.runtime.min.js',  
   distPath = 'dist',
   outputFileSuffix = 'imaginea-oss-widget';
 
 gulp.task('templates', function () {
   return gulp.src(templatesSource)
-    .pipe(handlebars())
+    .pipe(gulpHandlebars({ handlebars: handlebars }))
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
         namespace: 'Imaginea.OSS.Templates',

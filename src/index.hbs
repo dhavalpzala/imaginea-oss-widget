@@ -1,6 +1,21 @@
 <div class="oss-overlay"></div>
 <div class="oss-content">
   <div class="oss-close" onclick="ossClose(event)"></div>
-  <h1>{{title}}</h1>
-  <p>{{content}}</p>
+   <div class="oss-tabs" onclick="selectTab(event)">
+      <div class="oss-tab active">Projects</div>
+      <div class="oss-tab">More</div>            
+  </div>
+  <div class="oss-tab-contents">
+      <div class="oss-tab-content active">
+          {{#each projects}}
+            <div class="oss-project">
+              <div class="oss-project-image">{{this.shortName}}</div>
+              <p class="oss-project-title">{{this.title}}</p>
+            </div>
+          {{/each}}         
+      </div>
+      <div class="oss-tab-content">
+          TO DO
+      </div>            
+  </div>
 </div>
