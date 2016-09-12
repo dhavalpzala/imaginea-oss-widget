@@ -8,10 +8,10 @@
   <div class="oss-tab-contents">
       <div class="oss-tab-content active">
           {{#each projects}}
-            <div class="oss-project">
+            <a href='{{this.url}}' title='{{this.description}}' class="oss-project" target="_blank">
               <div class="oss-project-image">{{this.shortName}}</div>
               <p class="oss-project-title">{{this.title}}</p>
-            </div>
+            </a>
           {{/each}}         
       </div>
       <div class="oss-tab-content">

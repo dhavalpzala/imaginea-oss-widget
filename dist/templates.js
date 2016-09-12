@@ -4,11 +4,15 @@ this["Imaginea"]["OSS"]["Templates"] = this["Imaginea"]["OSS"]["Templates"] || {
 this["Imaginea"]["OSS"]["Templates"]["index"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "            <div class=\"oss-project\">\n              <div class=\"oss-project-image\">"
+  return "            <a href='"
+    + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
+    + "' title='"
+    + alias2(alias1((depth0 != null ? depth0.description : depth0), depth0))
+    + "' class=\"oss-project\" target=\"_blank\">\n              <div class=\"oss-project-image\">"
     + alias2(alias1((depth0 != null ? depth0.shortName : depth0), depth0))
     + "</div>\n              <p class=\"oss-project-title\">"
     + alias2(alias1((depth0 != null ? depth0.title : depth0), depth0))
-    + "</p>\n            </div>\n";
+    + "</p>\n            </a>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 

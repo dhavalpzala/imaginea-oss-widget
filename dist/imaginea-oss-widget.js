@@ -31,11 +31,15 @@ this["Imaginea"]["OSS"]["Templates"] = this["Imaginea"]["OSS"]["Templates"] || {
 this["Imaginea"]["OSS"]["Templates"]["index"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "            <div class=\"oss-project\">\n              <div class=\"oss-project-image\">"
+  return "            <a href='"
+    + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
+    + "' title='"
+    + alias2(alias1((depth0 != null ? depth0.description : depth0), depth0))
+    + "' class=\"oss-project\" target=\"_blank\">\n              <div class=\"oss-project-image\">"
     + alias2(alias1((depth0 != null ? depth0.shortName : depth0), depth0))
     + "</div>\n              <p class=\"oss-project-title\">"
     + alias2(alias1((depth0 != null ? depth0.title : depth0), depth0))
-    + "</p>\n            </div>\n";
+    + "</p>\n            </a>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -87,29 +91,35 @@ function getContextData() {
   return { 
     projects: [{
       title: 'Papyrus',
-      description: '',
+      description: 'Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation',
       shortName: 'P',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'https://hashd.github.io/papyrus'
     }, {
       title: 'kode beagle',
-      description: '',
+      description: 'KodeBeagle - Large scale code analytics and search using Apache Spark',
       shortName: 'KB',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'http://kodebeagle.com'
+
     }, {
       title: 'uvCharts',
-      description: '',
+      description: 'Simple yet powerful JavaScript Charting library built using d3.js',
       shortName: 'UV',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'http://imaginea.github.com/uvCharts'
     }, {
-      title: 'Openstack',
-      description: '',
-      shortName: 'O',
-      logoUrl: ''
+      title: 'mViewer',
+      description: 'A simple web-based Administration and Management Tool for MongoDB',
+      shortName: 'MV',
+      logoUrl: '',
+      url: 'http://www.youtube.com/watch?v=PbgNtvjc3Ug'
     }, {
-      title: 'Active Grid',
-      description: '',
-      shortName: 'AG',
-      logoUrl: ''
+      title: 'matisse',
+      description: 'A shared whiteboard using HTML5 Canvas with server on socket.io and node.js',
+      shortName: 'M',
+      logoUrl: '',
+      url: 'http://youtu.be/F4hA1A1PVxw'
     }]
   };
 }

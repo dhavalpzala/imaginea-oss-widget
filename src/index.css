@@ -82,10 +82,15 @@
 /* projects */
 .oss-project {
     float: left;
-    width: 23%;
-    margin: 1%;
+    width: 20.5%;
     text-align: center;
     margin-bottom: 15px;
+    padding: 2%;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+.oss-project:hover {
+    border: 1px solid gray;
 }
 .oss-project-image {
     padding: 15px 0px;
@@ -93,7 +98,8 @@
     font-size: 20px;
     border-radius: 50%;
     border: 1px solid gray;
-    background: lightsteelblue;
+    background: lightslategrey;
+    color: white;
     display: inline-block;
     clear: both;
     height: 20px;

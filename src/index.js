@@ -42,29 +42,35 @@ function getContextData() {
   return { 
     projects: [{
       title: 'Papyrus',
-      description: '',
+      description: 'Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation',
       shortName: 'P',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'https://hashd.github.io/papyrus'
     }, {
       title: 'kode beagle',
-      description: '',
+      description: 'KodeBeagle - Large scale code analytics and search using Apache Spark',
       shortName: 'KB',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'http://kodebeagle.com'
+
     }, {
       title: 'uvCharts',
-      description: '',
+      description: 'Simple yet powerful JavaScript Charting library built using d3.js',
       shortName: 'UV',
-      logoUrl: ''
+      logoUrl: '',
+      url: 'http://imaginea.github.com/uvCharts'
     }, {
-      title: 'Openstack',
-      description: '',
-      shortName: 'O',
-      logoUrl: ''
+      title: 'mViewer',
+      description: 'A simple web-based Administration and Management Tool for MongoDB',
+      shortName: 'MV',
+      logoUrl: '',
+      url: 'http://www.youtube.com/watch?v=PbgNtvjc3Ug'
     }, {
-      title: 'Active Grid',
-      description: '',
-      shortName: 'AG',
-      logoUrl: ''
+      title: 'matisse',
+      description: 'A shared whiteboard using HTML5 Canvas with server on socket.io and node.js',
+      shortName: 'M',
+      logoUrl: '',
+      url: 'http://youtu.be/F4hA1A1PVxw'
     }]
   };
 }
