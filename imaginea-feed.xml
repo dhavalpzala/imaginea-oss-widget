@@ -1,0 +1,165 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+
+<channel>
+	<title>experience@imaginea</title>
+	<atom:link href="https://blog.imaginea.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.imaginea.com</link>
+	<description>Technical Weblog from Imaginea Engineers</description>
+	<lastBuildDate>Mon, 12 Sep 2016 19:26:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.1.13</generator>
+	<item>
+		<title>AbstractMethodError for providing incorrect input in Zeppelin REST API</title>
+		<link>https://blog.imaginea.com/abstractmethoderror-for-providing-incorrect-input-in-zeppelin-rest-api/</link>
+		<comments>https://blog.imaginea.com/abstractmethoderror-for-providing-incorrect-input-in-zeppelin-rest-api/#comments</comments>
+		<pubDate>Fri, 09 Sep 2016 10:50:39 +0000</pubDate>
+		<dc:creator><![CDATA[Kavin Kumar K S]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4744</guid>
+		<description><![CDATA[This blog will speak about how did I debug and fixed the AbstractMethodError issue (https://issues.apache.org/jira/browse/ZEPPELIN-1025) on providing incorrect input for the Zeppelin interpreter REST API.When I started with the ticket, I thought it would be simple enough to fix but it was time consuming in figuring out the cause and fixing it.This read will help [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/abstractmethoderror-for-providing-incorrect-input-in-zeppelin-rest-api/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Unit testing nodeJs applications using Mocha</title>
+		<link>https://blog.imaginea.com/unit-testing-nodejs-applications-using-mocha/</link>
+		<comments>https://blog.imaginea.com/unit-testing-nodejs-applications-using-mocha/#comments</comments>
+		<pubDate>Wed, 24 Aug 2016 14:31:49 +0000</pubDate>
+		<dc:creator><![CDATA[Hari Prasad Bukke]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[NodeJS]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4690</guid>
+		<description><![CDATA[Frameworks that are required to test a nodeJs application: Mocha Chai Supertest Sinon Nock Rewire Istanbul Mocha is used to unit test nodeJS applications. This blog covers a step by step procedure to unit test any node application. To know the efficiency of unit testing we must know the code coverage of the tests that we [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/unit-testing-nodejs-applications-using-mocha/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Build Your own Custom Search Engine using JavaScript</title>
+		<link>https://blog.imaginea.com/build-your-own-custom-search-engine-using-javascript/</link>
+		<comments>https://blog.imaginea.com/build-your-own-custom-search-engine-using-javascript/#comments</comments>
+		<pubDate>Tue, 16 Aug 2016 09:42:20 +0000</pubDate>
+		<dc:creator><![CDATA[Utkarsh Srivastava]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4638</guid>
+		<description><![CDATA[Want to add a Search Feature to your blog/website? Want to do it using vanilla JavaScript,some node.js and a bit of JQUERY UI? If the answer to either/both/none of the above questions is yes, Then you have come to the right place. In this post, we are going to build a search engine using JavaScript, node.js and JQUERY [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/build-your-own-custom-search-engine-using-javascript/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sneak Peek into Service Fabric</title>
+		<link>https://blog.imaginea.com/sneak-peek-into-azure-service-fabric/</link>
+		<comments>https://blog.imaginea.com/sneak-peek-into-azure-service-fabric/#comments</comments>
+		<pubDate>Wed, 10 Aug 2016 11:46:04 +0000</pubDate>
+		<dc:creator><![CDATA[Monisha Bhattacharya]]></dc:creator>
+				<category><![CDATA[Cloud Computing]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[MicroService Architecture]]></category>
+		<category><![CDATA[Reliable Actor]]></category>
+		<category><![CDATA[ServiceFabric]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4639</guid>
+		<description><![CDATA[What is Service Fabric: New runtime environment i.e. designed to allow highly scalable, highly reliable, highly manageable micro services to run on Azure and on premise (local clusters- Windows Server, Linux) environments. It is a developer platform for hyper scale, distributed applications. Service Fabric represents the next-generation middleware platform for building and managing enterprise-class, Tier-1 [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/sneak-peek-into-azure-service-fabric/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>20 Tips for an Effective Code Review</title>
+		<link>https://blog.imaginea.com/20-tips-for-an-effective-code-review/</link>
+		<comments>https://blog.imaginea.com/20-tips-for-an-effective-code-review/#comments</comments>
+		<pubDate>Wed, 27 Jul 2016 10:03:53 +0000</pubDate>
+		<dc:creator><![CDATA[Bragadeesh Jegannathan]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Project Management]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4618</guid>
+		<description><![CDATA[It is a well-established fact that most of the bugs in the Software Development life cycle could be prevented literally right at the source (code). Since Code Review is almost an inevitable process in the Agile paradigm, keep in mind these 20 tips/guidelines (in no particular order) to become an effective reviewer of code. This [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/20-tips-for-an-effective-code-review/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Automating Continuous Delivery(CD) via TeamCity and Jenkins</title>
+		<link>https://blog.imaginea.com/automating-continuous-delivery-via-teamcity-and-jenkins/</link>
+		<comments>https://blog.imaginea.com/automating-continuous-delivery-via-teamcity-and-jenkins/#comments</comments>
+		<pubDate>Mon, 25 Jul 2016 09:20:26 +0000</pubDate>
+		<dc:creator><![CDATA[Kalyan Ram SM]]></dc:creator>
+				<category><![CDATA[DevOps]]></category>
+		<category><![CDATA[QA]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4606</guid>
+		<description><![CDATA[Automating Continuous Delivery(CD) via TeamCity and Jenkins Typically a product would use either TeamCity or Jenkins for building artifacts and deploy them to various environments such as Dev, QA, Stage and Prod.  However there will be certain scenario’s where multiple build and deploy tools would be used in order to build, deploy and determine the [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/automating-continuous-delivery-via-teamcity-and-jenkins/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WIRED WEIRD/IoT</title>
+		<link>https://blog.imaginea.com/wired-weirdiot/</link>
+		<comments>https://blog.imaginea.com/wired-weirdiot/#comments</comments>
+		<pubDate>Mon, 11 Jul 2016 12:02:20 +0000</pubDate>
+		<dc:creator><![CDATA[Satyanarayanan Govind]]></dc:creator>
+				<category><![CDATA[Humor]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4589</guid>
+		<description><![CDATA[]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/wired-weirdiot/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Stateless Authentication implementation using JWT, Nginx+Lua and Memcached</title>
+		<link>https://blog.imaginea.com/stateless-authentication-implementation-using-jwt-nginxlua-and-memcached/</link>
+		<comments>https://blog.imaginea.com/stateless-authentication-implementation-using-jwt-nginxlua-and-memcached/#comments</comments>
+		<pubDate>Fri, 08 Jul 2016 05:42:07 +0000</pubDate>
+		<dc:creator><![CDATA[Sudhir Chokkakula]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Authentication]]></category>
+		<category><![CDATA[Authorization]]></category>
+		<category><![CDATA[JWT]]></category>
+		<category><![CDATA[Lua]]></category>
+		<category><![CDATA[Memcached]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[NoCookies]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4325</guid>
+		<description><![CDATA[If you already have an idea on stateless authentication and JWT then proceed with this implementation blog otherwise just go through the previous blog Stateless Authentication to get an idea. As i mentioned in my previous blog JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA. Client [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/stateless-authentication-implementation-using-jwt-nginxlua-and-memcached/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Azure Service Bus Queues &#8211; Brokered messaging</title>
+		<link>https://blog.imaginea.com/azure-service-bus-queue/</link>
+		<comments>https://blog.imaginea.com/azure-service-bus-queue/#comments</comments>
+		<pubDate>Mon, 04 Jul 2016 14:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[Monisha Bhattacharya]]></dc:creator>
+				<category><![CDATA[Azure]]></category>
+		<category><![CDATA[Cloud Computing]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Queue]]></category>
+		<category><![CDATA[Service Bus]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4557</guid>
+		<description><![CDATA[In continuation of my previous post, where in i briefed using Azure Service Bus Queue as a Repository and build a Data Abstraction Layer on top of it. This post details on a scenario chosen, and explains why do we need to make a choice of using the Azure Service Bus Queue and what are [&#8230;]]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/azure-service-bus-queue/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WIRED WEIRD/VR GEAR</title>
+		<link>https://blog.imaginea.com/wired-weirdvr-gear/</link>
+		<comments>https://blog.imaginea.com/wired-weirdvr-gear/#comments</comments>
+		<pubDate>Mon, 04 Jul 2016 07:44:26 +0000</pubDate>
+		<dc:creator><![CDATA[Satyanarayanan Govind]]></dc:creator>
+				<category><![CDATA[Humor]]></category>
+
+		<guid isPermaLink="false">https://blog.imaginea.com/?p=4552</guid>
+		<description><![CDATA[]]></description>
+		<wfw:commentRss>https://blog.imaginea.com/wired-weirdvr-gear/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

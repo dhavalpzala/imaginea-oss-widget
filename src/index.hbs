@@ -15,7 +15,11 @@
           {{/each}}         
       </div>
       <div class="oss-tab-content">
-          TO DO
+            {{#each feeds}}
+            <a href='{{this.link}}' title='{{this.description}}' class="oss-feed" target="_blank">
+                {{this.title}}
+            </a>
+            {{/each}} 
       </div>            
   </div>
 </div>

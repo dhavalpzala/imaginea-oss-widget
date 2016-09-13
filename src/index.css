@@ -94,15 +94,14 @@
     text-decoration: none;
 }
 .oss-project:hover {
-    border: 1px solid #99C7FD;
+    border: 1px solid darkslategray;
 }
 .oss-project-image {
     padding: 15px 0px;
     font-family: monospace;
     font-size: 20px;
     border-radius: 50%;
-    border: 1px solid gray;
-    background: lightslategrey;
+    background: lightseagreen;
     color: white;
     display: inline-block;
     clear: both;
@@ -112,4 +111,11 @@
 }
 .oss-project-title {
     margin: 10px 0px;
+    color: seagreen
+}
+
+/* feeds */
+.oss-feed {
+    display: block;
+    margin-bottom: 10px;
 }
