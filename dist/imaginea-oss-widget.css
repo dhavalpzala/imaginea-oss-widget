@@ -29,9 +29,7 @@
     max-width: 540px;
     margin: 0px auto;
     background: white;
-    padding: 5px 0px;
     top: 10%;
-    border-radius: 8px;
 }
 
 .oss-close {
@@ -55,18 +53,24 @@
 
 /* Tabs */
 .oss-tabs {
-    background: #3b5998;
-    padding: 5px 15px;
+    overflow: hidden;
 }
 .oss-tab {
-    margin: 5px;
-    padding: 3px 5px;
-    color: white;
-    display: inline-block;
+    float: left;
+    padding: 15px 0px;
+    color: lightgray;
     cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(50% - 1px);  /* assume 2 tabs */
+    border-bottom: 2px solid #eee;
+}
+.oss-tab:not(:last-child) {
+    border-right: 1px solid #eee;
 }
 .oss-tab.active {
-    border-bottom: 2px solid white;
+    color: #157EFB;
+    border-bottom: 2px solid #157EFB;
 }
 .oss-tab-content {
     padding: 15px;
@@ -90,7 +94,7 @@
     text-decoration: none;
 }
 .oss-project:hover {
-    border: 1px solid gray;
+    border: 1px solid #99C7FD;
 }
 .oss-project-image {
     padding: 15px 0px;
