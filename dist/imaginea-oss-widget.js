@@ -48,6 +48,8 @@ this["Imaginea"]["OSS"]["Templates"]["index"] = Handlebars.template({"1":functio
     + "      </div>\n      <div class=\"oss-tab-content\">\n          TO DO\n      </div>            \n  </div>\n</div>";
 },"useData":true});
 "use strict";
+var IMAGINEA_FEED_URL = 'https://blog.imaginea.com/feed/'; 
+
 window.ImagineaOSSWidget = (function () {
   var obj = function() {
 
@@ -80,6 +82,8 @@ window.ImagineaOSSWidget = (function () {
             container.classList.toggle('oss-hide');
           }
         });
+
+        getFeed();
       }
     }
   }
@@ -124,6 +128,23 @@ function getContextData() {
   };
 }
 
+function getFeed() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+    }
+  };
+  xhttp.open("GET", IMAGINEA_FEED_URL, true);
+  xhttp.send();
+}
 function ossClose(event) {
   var target = event.target;
   if (target) {
