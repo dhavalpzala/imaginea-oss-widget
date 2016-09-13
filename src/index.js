@@ -1,5 +1,7 @@
 "use strict";
-var IMAGINEA_FEED_URL = 'https://blog.imaginea.com/feed/'; 
+//var IMAGINEA_FEED_URL = 'https://blog.imaginea.com/feed/';
+var IMAGINEA_FEED_URL = 'imaginea-feed.xml'; 
+var IMAGINEA_PROJECTS_URL = 'projects.json'; 
 
 window.ImagineaOSSWidget = (function () {
   var obj = function() {
@@ -22,19 +24,19 @@ window.ImagineaOSSWidget = (function () {
           var container = wrapper.querySelector('.oss-container');          
           // add oss content on first click
           if (container === null) {
-            var data = getContextData(); 
-            var html = Imaginea.OSS.Templates.index(data);
-
-            container = document.createElement('div');
-            container.classList.add('oss-container');
-            container.innerHTML = html;
-            wrapper.appendChild(container);
+            getContextData().then(function (data) {
+              var html = Imaginea.OSS.Templates.index(data);
+              container = document.createElement('div');
+              container.classList.add('oss-container');
+              container.innerHTML = html;
+              wrapper.appendChild(container);
+            }, function(reason) {
+              console.log(reason);
+            });
           } else {
             container.classList.toggle('oss-hide');
           }
         });
-
-        getFeed();
       }
     }
   }
@@ -43,43 +45,49 @@ window.ImagineaOSSWidget = (function () {
 })();
 
 function getContextData() {
-  return { 
-    projects: [{
-      title: 'Papyrus',
-      description: 'Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation',
-      shortName: 'P',
-      logoUrl: '',
-      url: 'https://hashd.github.io/papyrus'
-    }, {
-      title: 'kode beagle',
-      description: 'KodeBeagle - Large scale code analytics and search using Apache Spark',
-      shortName: 'KB',
-      logoUrl: '',
-      url: 'http://kodebeagle.com'
+  var context = {};
+  var promise = new Promise(function (resolve, reject) {
+    // get projects
+    getContent(IMAGINEA_PROJECTS_URL, function (projects) {
+      if (projects) {
+        context.projects = JSON.parse(projects).projects;
+        
+        if (context.projects && context.feeds) {
+          resolve(context);
+        }
+      } else {
+        reject(new Error('Error while getting Projects'));
+      }
+    });
 
-    }, {
-      title: 'uvCharts',
-      description: 'Simple yet powerful JavaScript Charting library built using d3.js',
-      shortName: 'UV',
-      logoUrl: '',
-      url: 'http://imaginea.github.com/uvCharts'
-    }, {
-      title: 'mViewer',
-      description: 'A simple web-based Administration and Management Tool for MongoDB',
-      shortName: 'MV',
-      logoUrl: '',
-      url: 'http://www.youtube.com/watch?v=PbgNtvjc3Ug'
-    }, {
-      title: 'matisse',
-      description: 'A shared whiteboard using HTML5 Canvas with server on socket.io and node.js',
-      shortName: 'M',
-      logoUrl: '',
-      url: 'http://youtu.be/F4hA1A1PVxw'
-    }]
-  };
+    // get feeds
+    getContent(IMAGINEA_FEED_URL, function (feeds) {
+      if (feeds) {
+        var parser = new DOMParser(),
+          feedsDOM = parser.parseFromString(feeds, "application/xml");
+
+        context.feeds = [];
+        feedsDOM.querySelectorAll('item').forEach(function (item) {
+          var feed = {};
+          feed.title = item.querySelector('title').innerHTML;
+          feed.link = item.querySelector('link').innerHTML;
+          feed.description = item.querySelector('description').innerHTML;
+          context.feeds.push(feed);
+        });
+
+        if (context.projects && context.feeds) {
+          resolve(context);
+        }
+      } else {
+         reject(new Error('Error while getting Feeds'));
+      }
+    });
+  });
+  
+  return promise;
 }
 
-function getFeed() {
+function getContent(url, cb) {
   var xhttp;
   if (window.XMLHttpRequest) {
     // code for modern browsers
@@ -90,12 +98,15 @@ function getFeed() {
   }
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText);
+      cb(this.responseText);
+    } else if (this.status === 404) {
+      cb(null);
     }
   };
-  xhttp.open("GET", IMAGINEA_FEED_URL, true);
+  xhttp.open("GET", url, true);
   xhttp.send();
 }
+
 function ossClose(event) {
   var target = event.target;
   if (target) {

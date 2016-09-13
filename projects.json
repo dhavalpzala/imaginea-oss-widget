@@ -1,0 +1,33 @@
+{ 
+    "projects": [{
+      "title": "Papyrus",
+      "description": "Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation",
+      "shortName": "P",
+      "logoUrl": "",
+      "url": "https://hashd.github.io/papyrus"
+    }, {
+      "title": "kode beagle",
+      "description": "KodeBeagle - Large scale code analytics and search using Apache Spark",
+      "shortName": "KB",
+      "logoUrl": "",
+      "url": "http://kodebeagle.com"
+    }, {
+      "title": "uvCharts",
+      "description": "Simple yet powerful JavaScript Charting library built using d3.js",
+      "shortName": "UV",
+      "logoUrl": "",
+      "url": "http://imaginea.github.com/uvCharts"
+    }, {
+      "title": "mViewer",
+      "description": "A simple web-based Administration and Management Tool for MongoDB",
+      "shortName": "MV",
+      "logoUrl": "",
+      "url": "http://www.youtube.com/watch?v=PbgNtvjc3Ug"
+    }, {
+      "title": "matisse",
+      "description": "A shared whiteboard using HTML5 Canvas with server on socket.io and node.js",
+      "shortName": "M",
+      "logoUrl": "",
+      "url": "http://youtu.be/F4hA1A1PVxw"
+    }]
+}
