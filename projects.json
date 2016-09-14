@@ -1,12 +1,6 @@
 { 
     "projects": [{
-      "title": "Papyrus",
-      "description": "Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation",
-      "shortName": "P",
-      "logoUrl": "",
-      "url": "https://hashd.github.io/papyrus"
-    }, {
-      "title": "kode beagle",
+      "title": "KodeBeagle",
       "description": "KodeBeagle - Large scale code analytics and search using Apache Spark",
       "shortName": "KB",
       "logoUrl": "",
@@ -24,10 +18,16 @@
       "logoUrl": "",
       "url": "http://www.youtube.com/watch?v=PbgNtvjc3Ug"
     }, {
-      "title": "matisse",
+      "title": "Matisse",
       "description": "A shared whiteboard using HTML5 Canvas with server on socket.io and node.js",
       "shortName": "M",
       "logoUrl": "",
       "url": "http://youtu.be/F4hA1A1PVxw"
+    }, {
+      "title": "Papyrus",
+      "description": "Experimental Visual Programming Environment using Angular 2, RxJS, TypeScript which allows for Direct Manipulation",
+      "shortName": "P",
+      "logoUrl": "",
+      "url": "https://hashd.github.io/papyrus"
     }]
 }

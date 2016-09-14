@@ -71,7 +71,7 @@ function getContextData() {
           var feed = {};
           feed.title = item.querySelector('title').innerHTML;
           feed.link = item.querySelector('link').innerHTML;
-          feed.description = item.querySelector('description').innerHTML;
+          feed.description = item.querySelector('description').innerHTML.replace("<![CDATA[", "").replace("]]>", "").replace('[&#8230;]', '...');
           context.feeds.push(feed);
         });
 
