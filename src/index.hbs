@@ -2,7 +2,7 @@
 <div class="oss-content">
   <div class="oss-close" onclick="ossClose(event)"></div>
    <div class="oss-tabs" onclick="selectTab(event)">
-      <div class="oss-tab active">Projects</div>
+      <div class="oss-tab active">OSS Projects</div>
       <div class="oss-tab">More</div>            
   </div>
   <div class="oss-tab-contents">
@@ -15,9 +15,11 @@
           {{/each}}         
       </div>
       <div class="oss-tab-content">
+        <div class="oss-feed-caption">From the Engineering Blog</div>
             {{#each feeds}}
             <a href='{{this.link}}' title='{{this.description}}' class="oss-feed" target="_blank">
-                {{this.title}}
+                <div class="oss-blog-title">{{this.title}}</div>
+                <div class="oss-blog-description">{{this.description}}</div>
             </a>
             {{/each}} 
       </div>            
