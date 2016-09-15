@@ -15,7 +15,7 @@
     top: 0px;
     left: 0px;
     background: black;
-    opacity: 0.6;
+    opacity: 0.72;
 }
 
 .oss-hide {
@@ -37,9 +37,9 @@
     right: -8px;
     top: -8px;
     cursor: pointer;
-    border: 1px solid gray;
     border-radius: 50%;
-    background: white;
+    background: #333;
+    color: #fff;
     padding: 10px 5px 5px 5px; 
 }
 
@@ -94,13 +94,15 @@
     padding: 16px 2%;
     border: 1px solid transparent;
     text-decoration: none;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
 .oss-project:hover {
     border: 1px solid #157EFB;
+    background: rgba(21, 126, 251, 0.05);
 }
 .oss-project-image {
     padding: 15px 0px;
-    font-family: monospace;
+    font-family: Monaco, 'Ubuntu Mono', 'Consolas', monospace;
     font-size: 20px;
     border-radius: 50%;
     background: #157EFB;
@@ -113,7 +115,7 @@
 }
 .oss-project-title {
     margin: 10px 0px;
-    color: #888;
+    color: #555;
 }
 
 /* feeds */
@@ -125,10 +127,12 @@
     line-height: 1.5;
     border: 1px solid transparent;
     border-bottom: 1px solid #ddd;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
 
 .oss-feed:hover {
-  border: 1px solid #157EFB
+    border: 1px solid #157EFB;
+    background: rgba(21, 126, 251, 0.05);
 }
 
 .oss-feed .oss-blog-title {
@@ -138,7 +142,7 @@
 }
 
 .oss-feed .oss-blog-description {
-      color: #888;
+    color: #888;
     font-size: 0.9em;
     line-height: 1.4;
     text-align: justify;
@@ -147,4 +151,5 @@
 .oss-feed-caption {
   margin-bottom: 8px;
   padding: 0 12px;
+  color: #555;
 }
